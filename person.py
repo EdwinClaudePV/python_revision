@@ -12,7 +12,7 @@ class Person:
 
 class SpecialAgent(Person):
     def __init__(self, firstName, lastName, secretName):
-        Person.__init__(self, firstName, lastName)
+        super().__init__(firstName, lastName)
         self.secretName = secretName
     
     def __str__(self):
